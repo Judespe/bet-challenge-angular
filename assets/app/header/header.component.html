@@ -1,0 +1,56 @@
+<nav id='main-menu' class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a id='logo_link' class="navbar-brand" [routerLink]="['/']"><img src="/assets/img/misc/logo.png" alt='logo Bet Challenge'></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-target">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>	
+          <span id='span-icon-menu'>MENU</span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-target">
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a id='leagues_list_menu' href="#" class="dropdown-toggle" data-toggle="dropdown">Actualités</a>
+            <ul class="dropdown-menu" aria-labelledby="leagues_list_menu">
+<!--               {% for league in leagues %}
+                <li><a href="{{ path('league', { 'id': league.id }) }}">{{ league.name }}</a></li>
+              {% endfor %}
+ -->            </ul>
+          </li>
+          <li class="dropdown"><a id='standings_list_menu' href="#" class="dropdown-toggle" data-toggle="dropdown">Classements</a>
+            <ul class="dropdown-menu" aria-labelledby="standings_list_menu">
+<!--               {% for league in leagues %}
+                <li><a href="{{ path('standings', { 'id': league.id }) }}">{{ league.name }}</a></li>
+              {% endfor %}
+ -->            </ul>
+          </li>
+<!-- 		{% if app.user and is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+	      <li>
+            <a href="{{ path('profile', { 'username': app.user.username }) }}">Mon profil</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user"></span> Bonjour, {{ app.user.username }} <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              	{% if app.user and is_granted('ROLE_ADMIN') %}
+				    <li class="{% if adminMenu is defined %}active{% endif %}"><a href="{{ path('admin') }}"><span class="glyphicon glyphicon-cog"></span> Administration</a></li>
+				{% endif %}             
+              		<li><a href="{{ path('logout') }}">Log out</a></li>
+            </ul>
+          </li>
+        {% else %}
+ -->
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-user"></span> Non connecté <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Connexion</a></li>
+            </ul>
+          </li>
+<!--         {% endif %} -->
+      </ul>
+    </div>
+  </div><!-- /.container -->
+</nav>

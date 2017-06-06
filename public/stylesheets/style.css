@@ -1,0 +1,91 @@
+body {
+	width: auto;
+	margin-top: 70px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+section#content {
+	min-height: 500px;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	border-top: 1px solid #e7e7e7;
+}
+
+hr {
+	width: 10%;
+	border-top: 1px solid #666;
+	margin: 20px auto;
+}
+
+.h4-like {
+	font-size: 18px;
+	margin: 30px 0px 10px 0px;
+}
+
+.flex_horizontal_full_width {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: baseline;
+	width: 100%;
+}
+
+.flex_center_around {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex_column_center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.no-list-style {
+	list-style-type: none;
+}
+
+.glyph-xs {
+  font-size: 0.6em;
+  margin-left: 5px;
+}
+
+.gold-text {
+	color: #eac136;
+	font-weight: bold;
+}
+
+.silver-text {
+	color: #a7a7a7;
+	font-weight: bold;
+}
+
+.bronze-text {
+	color: #8e4300;
+	font-weight: bold;
+}
+
+form .alert {
+	padding: 6px 12px;
+	height: 34px;
+}
+
+.hidden_field,
+.hidden_status {
+	display: none;
+}
